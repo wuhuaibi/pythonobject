@@ -7,7 +7,7 @@ TWITTER_URL = 'https://api.twitter.com/1.1/search/tweets.json'
 while True:
     print ''
     que = raw_input('Enter the question you want to find:')
-    if ( len(acct) < 1 ) : break
+    if ( len(queacct) < 1 ) : break
     url = twurl.augment(TWITTER_URL,
         {'q': que, 'count': '10'} )
     print 'Retrieving', url
